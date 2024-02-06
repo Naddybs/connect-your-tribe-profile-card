@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(hsl(333, 100%, 50%), hwb(262 21% 4%));
+    font-family: open sans;
+    color: #e9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    margin: 2rem 0 2rem;
+    color: #fdf7ffb6;
+    font-family: "bungee shade", sans-serif;
+    font-size: xx-large;
+    text-align: center;
+  }
+  
+  
+  img{
+    max-width: 50%;
+    max-height: 60%;
+    padding: 1em;
+    border-radius: 4rem;
+    background: #f059aa7d;
+    background: linear-gradient(0deg, hsla(335, 97%, 45%, 0.427) 40%, hsl(237, 36%, 58%) 100%);
+    box-shadow: #8a4dde84 20px 30px 5px inset, 15px 15px 5px rgba(76, 6, 145, 0.702); 
+  }
+  section {
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+  }
+  
+  section:hover > .card {
+    cursor: grabbing;
+    transform: rotateX(-900deg); 
+  }
+  
+  .card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+  
+  
+  .front,
+  .back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5rem;
+    background: hwb(328 35% 6%);
+    background: linear-gradient(0deg, rgba(224, 3, 95, 0.767) 40%, hsl(237, 36%, 58%) 100%);
+    box-shadow: hwb(265 36% 15% / 0.639) 20px 30px 5px inset, 15px 15px 5px rgba(76, 6, 145, 0.702); 
+  }
+   
+  
+  .back {
+    background-color: hwb(269 1% 33% / 0.258);
+    transform: rotateX(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  border-radius: 5rem;
+  background: hwb(273 67% 0% / 0.55);
+  box-shadow: hwb(268 3% 13% / 0.681) 20px 30px 5px inset, 15px 15px 5px rgba(224, 3, 95, 0.767);
+  
+  }
+  
+  a:link {
+  color: hwb(328 2% 1%);
+  text-decoration: none;
+  font-size: 17.5px;
+  font-family: "bungee shade";
+  margin-left: 1.5em;
+  }
+  a:visited {
+    text-decoration: none;
+    color: rgb(117, 4, 255);
+    }
+    a:hover {
+    text-decoration: none;
+    color: hsl(336, 80%, 51%);
+    }
+    a:active {
+    text-decoration: none;
+    color: hsl(336, 80%, 51%);
+    }
+    a.border {
+    padding: 10%;
+    border-style: solid;
+    border-radius: 12em;
+    border-color: rgba(234, 13, 87, 0.687);
+    border-width: 10px;
+    box-sizing: border-box;
+    box-shadow: hsla(337, 41%, 36%, 0.733) 8px 8px 5px inset, hwb(265 6% 4% / 0.614) 8px 8px 5px;
+    }
