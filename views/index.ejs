@@ -1,30 +1,24 @@
 <%- include('./partials/head') %>
 
 <section>
-  <div class="card">
-   <div class="front"> 
-     <header><h1>Nadira Ben Salah</h1></header>
-   
-     <img src="assets/mugshot .jpg">
-   </div>
-  <div class="back">
-    <a class="border"  href="link">No personality available </a>
+  <container class="card">
+      <div class="front"> 
+        <h1><%=name%></h1>  
+        <h2><%=surname%></h2>
+        <p><%=bio%></p>
+        <p><%=custom%></p>
+      </div>
+  </container>
  
-  </div>
-  </div>
- </section>
+  <div class="click">
+  <img class="avatar" src="<%=avatar%>" alt="avatar">
+  <!-- <a href="#" class="btn">Click me</a> -->
+  <div>
+  
+</section>
 
 
 
-<!-- <article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
 
-  <p><%= data.name %></p>
-
-  <footer></footer>
-</article> -->
 
 <%- include('./partials/foot') %>

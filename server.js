@@ -5,8 +5,8 @@ import express from 'express'
 import fetchJson from './helpers/fetch-json.js'
 
 // Haal data op uit de FDND API, ga pas verder als de data gedownload is
-const data = await fetchJson('https://fdnd.directus.app/items/person/7')
-// console.log(data); // uncomment om de opgehaalde data te checken
+const { data } = await fetchJson('https://fdnd.directus.app/items/person/8')
+// console.log(data.name); // uncomment om de opgehaalde data te checken
 
 // Maak een nieuwe express app aan
 const app = express()
@@ -39,3 +39,4 @@ app.listen(app.get('port'), function () {
   // Toon een bericht in de console en geef het poortnummer door
   console.log(`Application started on http://localhost:${app.get('port')}`)
 })
+
